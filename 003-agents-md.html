@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AGENTS.md 是什麼｜AI 隨身筆記</title>
+  <meta name="description" content="寫給 AI 看的專案說明書，讓 AI 每次都照同一套規則幫你做事。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&family=Noto+Serif+TC:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <header class="site-bar">
+    <div class="wrap">
+      <a class="brand" href="../index.html">AI <span>隨身筆記</span></a>
+      <nav><a href="../index.html">全部筆記</a></nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <article class="note">
+
+      <header class="note-head">
+        <div class="num">NOTE 003</div>
+        <h1>AGENTS.md 是什麼</h1>
+        <p class="summary">寫給 AI 看的專案說明書，讓 AI 每次都照同一套規則幫你做事。</p>
+        <div class="tags"><span class="tag">進階</span><span class="tag">AI 協作</span></div>
+      </header>
+
+      <section class="tldr">
+        <span class="label">一句話解釋</span>
+        <p>放在專案裡、專門寫給 AI 看的工作守則。</p>
+      </section>
+
+      <section>
+        <h2>核心概念</h2>
+        <ul>
+          <li><code>AGENTS.md</code> 是一個放在專案根目錄的 Markdown 檔案，內容是這個專案的目的、結構和規則。</li>
+          <li>AI 程式工具（例如 Codex、Cursor）會讀取它；Claude Code 則是讀 <code>CLAUDE.md</code>，兩者概念相同。</li>
+          <li>它解決的問題是：<mark>AI 每次對話都會忘記前面的事</mark>，寫成檔案就不用每次重新交代。</li>
+          <li>好的 AGENTS.md 要具體，例如「檔名用 <code>004-rag.html</code> 格式」，而不是「檔名要整齊」。</li>
+        </ul>
+      </section>
+
+      <div class="example">
+        <h2>生活化例子</h2>
+        <p>社團每年換幹部，如果有一份「交接手冊」寫清楚活動流程、海報格式、經費怎麼報，新幹部看完就能上手。</p>
+        <p>AGENTS.md 就是寫給 AI 的交接手冊。這個網站本身就是例子：只要對 AI 說「新增一篇關於 RAG 的筆記」，它讀完規則就知道要建什麼檔名、放哪些區塊、要更新哪些連結。</p>
+      </div>
+
+      <div class="pitfall">
+        <h2>常見誤解</h2>
+        <ul>
+          <li>很多人以為寫了 AGENTS.md，AI 就百分之百會照做，其實 AI 仍可能遺漏，所以規則最後要附「檢查清單」讓它自我確認。</li>
+          <li>很多人以為規則寫越多越好，其實太長或互相矛盾的規則反而讓 AI 混亂，重點是清楚、具體、可檢查。</li>
+        </ul>
+      </div>
+
+      <details class="quiz">
+        <summary>小練習：「頁面要好看」這條規則有什麼問題？</summary>
+        <p>太模糊，AI 不知道什麼叫好看。可以改成具體規則，例如「只能使用 style.css 裡定義的顏色變數」、「強調文字用 &lt;mark&gt;，一頁最多 3 處」，這樣 AI 和人都能檢查有沒有做到。</p>
+      </details>
+
+      <section>
+        <h2>延伸閱讀</h2>
+        <ul>
+          <li><a href="002-prompt-basics.html">002 寫好 Prompt 的四個要素</a></li>
+          <li><a href="https://agents.md/">AGENTS.md 官方說明</a></li>
+        </ul>
+      </section>
+
+      <nav class="pager">
+        <a class="prev" href="002-prompt-basics.html"><small>← 上一篇</small>寫好 Prompt 的四個要素</a>
+      </nav>
+
+    </article>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap"><a href="../index.html">← 回到全部筆記</a></div>
+  </footer>
+</body>
+</html>

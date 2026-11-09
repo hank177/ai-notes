@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>什麼是大型語言模型（LLM）｜AI 隨身筆記</title>
+  <meta name="description" content="ChatGPT、Claude 背後的核心技術，其實是一個超強的「接龍機器」。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&family=Noto+Serif+TC:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <header class="site-bar">
+    <div class="wrap">
+      <a class="brand" href="../index.html">AI <span>隨身筆記</span></a>
+      <nav><a href="../index.html">全部筆記</a></nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <article class="note">
+
+      <header class="note-head">
+        <div class="num">NOTE 001</div>
+        <h1>什麼是大型語言模型（LLM）</h1>
+        <p class="summary">ChatGPT、Claude 背後的核心技術，其實是一個超強的「接龍機器」。</p>
+        <div class="tags"><span class="tag">基礎</span><span class="tag">LLM</span></div>
+      </header>
+
+      <section class="tldr">
+        <span class="label">一句話解釋</span>
+        <p>讀過海量文字、很會猜「下一個字」的程式。</p>
+      </section>
+
+      <section>
+        <h2>核心概念</h2>
+        <ul>
+          <li>大型語言模型（Large Language Model, LLM）是用大量文字資料訓練出來的程式，ChatGPT、Claude、Gemini 都屬於這一類。</li>
+          <li>它的基本工作只有一件事：<mark>根據前面的文字，預測接下來最可能出現的字</mark>，一個字一個字往下寫。</li>
+          <li>「大型」指的是模型裡可調整的參數非常多，加上訓練資料量很大，所以能學到文法、常識和各種寫作風格。</li>
+          <li>LLM 沒有在「查資料」，而是用學到的語言規律生成答案，所以它可能講得很順，但內容是錯的。</li>
+        </ul>
+      </section>
+
+      <div class="example">
+        <h2>生活化例子</h2>
+        <p>想像一個看完圖書館所有書的同學，你說「今天天氣真」，他馬上接「好」。你問他期末報告怎麼寫，他也能接出一整段像樣的內容。</p>
+        <p>但他是靠「讀過很多類似的句子」在接話，不是真的去翻書確認，所以偶爾會很有自信地講錯。</p>
+      </div>
+
+      <div class="pitfall">
+        <h2>常見誤解</h2>
+        <ul>
+          <li>很多人以為 LLM 像搜尋引擎一樣會上網找答案，其實基本的 LLM 只靠訓練時學到的內容回答，要另外接上搜尋功能才會查網路。</li>
+          <li>很多人以為 AI 講得很有自信就代表是對的，其實它可能編出不存在的資料，這叫做<mark>幻覺（Hallucination）</mark>。</li>
+        </ul>
+      </div>
+
+      <details class="quiz">
+        <summary>小練習：為什麼 LLM 有時會編造不存在的書名？</summary>
+        <p>因為 LLM 是在預測「看起來合理的下一個字」，不是在資料庫裡查找。一個書名只要聽起來很合理，模型就可能生成出來，即使那本書根本不存在。所以重要資訊一定要自己再查證。</p>
+      </details>
+
+      <section>
+        <h2>延伸閱讀</h2>
+        <ul>
+          <li><a href="002-prompt-basics.html">002 寫好 Prompt 的四個要素</a></li>
+        </ul>
+      </section>
+
+      <nav class="pager">
+        <a class="next" href="002-prompt-basics.html"><small>下一篇 →</small>寫好 Prompt 的四個要素</a>
+      </nav>
+
+    </article>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap"><a href="../index.html">← 回到全部筆記</a></div>
+  </footer>
+</body>
+</html>
