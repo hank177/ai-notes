@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI 幻覺是什麼｜AI 隨身筆記</title>
+  <meta name="description" content="AI 有時會一本正經地說錯話，學會辨認和查證是使用 AI 的基本功。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&family=Noto+Serif+TC:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <header class="site-bar">
+    <div class="wrap">
+      <a class="brand" href="../index.html">AI <span>隨身筆記</span></a>
+      <nav><a href="../index.html">全部筆記</a></nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <article class="note">
+
+      <header class="note-head">
+        <div class="num">NOTE 004</div>
+        <h1>AI 幻覺是什麼</h1>
+        <p class="summary">AI 有時會一本正經地說錯話，學會辨認和查證是使用 AI 的基本功。</p>
+        <div class="tags"><span class="tag">基礎</span><span class="tag">查證</span></div>
+      </header>
+
+      <section class="tldr">
+        <span class="label">一句話解釋</span>
+        <p>AI 用很有自信的語氣，說出聽起來合理但其實錯誤的內容。</p>
+      </section>
+
+      <section>
+        <h2>核心概念</h2>
+        <ul>
+          <li>AI 幻覺（Hallucination）是指 AI 產生語氣肯定、看似合理，但與事實不符或根本不存在的內容。</li>
+          <li>原因和 LLM 的運作方式有關：它是在預測「下一個最可能出現的字」，追求的是通順，而不是查證真假。</li>
+          <li>常見的樣子包括：編出不存在的書、論文或網址，把人名、年份、數字張冠李戴，或替事情補上沒發生過的細節。</li>
+          <li><mark>語氣越肯定，不代表內容越正確</mark>，AI 不會主動標示「這句是我編的」。</li>
+          <li>降低幻覺的方法：提供資料請它根據資料回答、要求附上來源並親自點開確認、在 Prompt 裡允許它回答「不知道」。</li>
+        </ul>
+      </section>
+
+      <div class="example">
+        <h2>生活化例子</h2>
+        <p>期中考遇到不會的申論題，有些同學不會留白，而是寫滿一整頁，字句通順、用詞專業，但仔細看內容其實是掰的。</p>
+        <p>AI 幻覺就像這樣。例如你請 AI 幫報告列參考文獻，它給了幾篇作者、期刊、年份都很完整的論文，結果到圖書館資料庫一查，其中幾篇根本不存在。</p>
+      </div>
+
+      <div class="pitfall">
+        <h2>常見誤解</h2>
+        <ul>
+          <li>很多人以為 AI 附上網址或參考文獻就一定是真的，其實來源本身也可能是編的，要實際點開確認。</li>
+          <li>很多人以為只有冷門問題才會出現幻覺，其實常見問題也可能在日期、數字、人名這類細節出錯。</li>
+          <li>很多人以為能上網搜尋的 AI 就不會幻覺，其實它仍可能誤讀或錯誤摘要網頁內容，只是機率降低。</li>
+        </ul>
+      </div>
+
+      <details class="quiz">
+        <summary>小練習：AI 推薦了三本機器學習入門書，附上書名、作者和出版年，交報告前你該做什麼？</summary>
+        <p>逐一到圖書館館藏系統或書店網站查證，確認書真的存在，而且書名、作者、年份都對得上。書目和參考文獻正是幻覺最常出現的地方。下次提問時，也可以加一句「不確定就說不知道」。</p>
+      </details>
+
+      <section>
+        <h2>延伸閱讀</h2>
+        <ul>
+          <li><a href="001-what-is-llm.html">001 什麼是大型語言模型（LLM）</a></li>
+          <li><a href="002-prompt-basics.html">002 寫好 Prompt 的四個要素</a></li>
+        </ul>
+      </section>
+
+      <nav class="pager">
+        <a class="prev" href="003-agents-md.html"><small>← 上一篇</small>AGENTS.md 是什麼</a>
+      </nav>
+
+    </article>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap"><a href="../index.html">← 回到全部筆記</a></div>
+  </footer>
+</body>
+</html>
